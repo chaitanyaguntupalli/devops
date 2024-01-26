@@ -1,5 +1,5 @@
 pipeline {
-    agent any,
+    agent any
     stages {
         stage('checkout'){
             echo 'checking out the repo..'
@@ -16,6 +16,7 @@ pipeline {
         stage('scan'){
             echo 'scanning..'
             // scanning for vulnerabilities and other tags
+            // sonarqube analysis: SonarCloud
         }
         stage('quality'){
             echo 'quality check!'
